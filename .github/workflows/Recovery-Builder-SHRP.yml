@@ -20,7 +20,7 @@ on:
       MANIFEST_BRANCH:
         description: 'Manifest Branch'
         required: true
-        default: ''
+        default: 'shrp-12.1'
         type: choice
         options:
         - shrp-12.1
@@ -28,23 +28,23 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
         required: true
-        default: 'https://github.com/cd-Spidey/custom_recovery_tree_xiaomi_cannong'
+        default: 'https://github.com/TeamWin/android_device_samsung_m14x.git'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' # Your Device Tree Branch, make sure it's right.
         required: true
-        default: 'Android-S'
+        default: 'android-12.1'
       DEVICE_PATH:
         description: 'Specify your Device Path' # As is, just like your DEVICE_PATH in your BoardConfig.mk
         required: true
-        default: 'device/realme/nashc'
+        default: 'device/samsung/m14x'
       DEVICE_NAME:
         description: 'Specify your Device Codename' # As is, just like your PRODUCT_DEVICE in your device tree.
         required: true
-        default: 'nashc'
+        default: 'm14x'
       MAKEFILE_NAME:
         description: 'Specify your Makefile Name' # Look for twrp_ or omni_codename.mk, just remove the .mk
         required: true
-        default: 'twrp_nashc'
+        default: 'twrp_m'
       BUILD_TARGET:
         description: 'Specify your Build Target' # Pick among boot, recovery and vendor_boot
         required: true
